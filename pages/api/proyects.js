@@ -1,0 +1,1 @@
+// Colocar los Proyectos como un Array de objetos, colocar nombre,id=index o crear un id con uuid o alguna libreria, linkDeploy y linkGithub, stack=lenguajes y frameworks utilizados, infoProyecto, imgPrevisualizacion.
