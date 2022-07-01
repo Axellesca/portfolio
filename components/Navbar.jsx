@@ -4,14 +4,16 @@ import { MdDarkMode } from 'react-icons/md'
 export const Navbar = () => {
   return (
     <Stack mt={"30px"} px={"20px"} display="flex" direction={"row"} justifyContent={"space-around"} alignItems={"flex-end"} flexWrap={"wrap"}>
+      {/* Fijarse alignitems para corregir el error de que queden mas arriba que otro*/}
       {/* <Box> */}
         <Text fontSize={"3xl"}>
-          Axel Lescano
+          DDDDD DDDDDDDDD
+          {/* Axel Lescano */}
         </Text>
         <Text as={"i"}>Frontend Developer</Text>
       {/* </Box> */}
       <Box flexGrow={"1"}></Box>
-      <Box display={"flex"} justifyContent={"space-around"} flexGrow={"1"}>
+      <Box display={"flex"} justifyContent={"space-around"} flexGrow={"-1"}>
         <Box>
           <Button colorScheme={"yellow"} /* colorScheme={"#E8E6D3"} */ color="black" variant={"ghost"}>
             Info/Exp
