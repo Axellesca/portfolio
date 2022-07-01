@@ -7,7 +7,7 @@ const theme = extendTheme({
     global:{
       body:{
         bg:'#E8E6D3',
-        fontFamily:'Sen'
+        fontFamily:'Sen',
       }
     }
   }

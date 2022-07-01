@@ -10,9 +10,9 @@ export default function Home() {
         <title>Portfolio Next</title>
         <meta name="description" content="Portfolio Personal para muestra de Proyectos" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        {/* <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-        <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet"/> */}
       </Head>
 
       <Navbar/>
