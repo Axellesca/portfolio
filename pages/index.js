@@ -1,8 +1,11 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import { Footer } from '../components/Footer';
-import { Navbar } from '../components/Navbar';
-import styles from '../styles/Home.module.css';
+import Head from "next/head";
+import Image from "next/image";
+import { Experiencia } from "../components/Experiencia";
+import { Footer } from "../components/Footer";
+import { Info } from "../components/Info";
+import { Navbar } from "../components/Navbar";
+import { StackIcons } from "../components/StackIcons";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -22,7 +25,12 @@ export default function Home() {
       </Head>
       {/* NavBar */}
       <Navbar />
-
+      {/* Info/Exp */}
+      <Info />
+      {/* Stack */}
+      <StackIcons />
+      {/* Experiencia */}
+      <Experiencia />
       {/* Footer */}
       <Footer />
     </div>
