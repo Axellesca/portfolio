@@ -1,3 +1,6 @@
+import { Box, Stack, Text, Button } from "@chakra-ui/react";
+import { Icon } from "@chakra-ui/icons";
+import { ButtonModal } from "./ButtonModal";
 import { MdContactPage, MdOutlineContactPage } from "react-icons/md";
 import {
   AiOutlineGithub,
@@ -7,9 +10,6 @@ import {
   AiFillMail,
 } from "react-icons/ai";
 import { TbBrandGithub } from "react-icons/tb";
-import { Box, Stack, Text, Button } from "@chakra-ui/react";
-import { Icon } from "@chakra-ui/icons";
-import { ButtonModal } from "./ButtonModal";
 
 export const Footer = () => {
   const modalClick = () => {
@@ -19,7 +19,7 @@ export const Footer = () => {
   return (
     <Box>
       <Box display={"flex"} flexDirection={"row"} justifyContent={"center"}>
-        <Text fontWeight={"bold"}>
+        <Text fontWeight={"bold"} fontSize={"xl"}>
           {/* XXXXX XXXXXXXX */}
           Contacta Conmigo
         </Text>
