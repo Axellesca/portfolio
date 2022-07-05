@@ -4,6 +4,7 @@ import { Experiencia } from "../components/Experiencia";
 import { Footer } from "../components/Footer";
 import { Info } from "../components/Info";
 import { Navbar } from "../components/Navbar";
+import { Proyect } from "../components/Proyect";
 import { StackIcons } from "../components/StackIcons";
 import styles from "../styles/Home.module.css";
 
@@ -31,6 +32,8 @@ export default function Home() {
       <StackIcons />
       {/* Experiencia */}
       <Experiencia />
+      {/* Proyects */}
+      <Proyect />
       {/* Footer */}
       <Footer />
     </div>
