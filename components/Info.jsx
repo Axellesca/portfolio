@@ -2,7 +2,7 @@ import { Box, Text, Stack } from "@chakra-ui/react";
 
 export const Info = () => {
   return (
-    <Box>
+    <Box px={8}>
       <Text fontWeight={"bold"}>Sobre Mí</Text>
       <Text>
         Frontend Developer Trainee/Jr en constante aprendizaje, cursé la

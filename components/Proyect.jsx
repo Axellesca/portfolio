@@ -1,4 +1,4 @@
-import { Box, Text, HStack, VStack } from "@chakra-ui/react";
+import { Box, Text, HStack, VStack,Grid,GridItem } from "@chakra-ui/react";
 import { ProyectCard } from "./ProyectCard";
 
 // Colocar los Proyectos como un Array de objetos, colocar nombre,id=index o crear un id con uuid o alguna libreria, linkDeploy y linkGithub, stack=lenguajes y frameworks utilizados, infoProyecto, imgPrevisualizacion.
@@ -49,19 +49,21 @@ export const Proyect = () => {
           Proyectos
         </Text>
       </VStack>
-      <HStack justifyContent={"center"} gap={16} p={10}>
-        {proyectos.map((proy) => (
-          <ProyectCard
-            key={proy.id}
-            name={proy.name}
-            linkDeploy={proy.linkDeploy}
-            linkGitHub={proy.linkGitHub}
-            stack={proy.stack}
-            infoProyect={proy.infoProyect}
-            imgPreview={proy.imgPreview}
-          />
-        ))}
-      </HStack>
+      {/* <Grid templateColumns={'repeat(3,1fr)'} gap={6} px={4}> */}
+        <HStack justifyContent={{base:"space-evenly",md:'center'}} gap={16} p={10} wrap={'wrap'}>
+          {proyectos.map((proy) => (
+            <ProyectCard
+              key={proy.id}
+              name={proy.name}
+              linkDeploy={proy.linkDeploy}
+              linkGitHub={proy.linkGitHub}
+              stack={proy.stack}
+              infoProyect={proy.infoProyect}
+              imgPreview={proy.imgPreview}
+            />
+          ))}
+        </HStack>
+      {/* </Grid> */}
     </Box>
   );
 };

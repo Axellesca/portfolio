@@ -7,16 +7,16 @@ import { FaReact, FaNode, FaGitAlt } from "react-icons/fa";
 
 export const StackIcons = () => {
   return (
-    <Box>
+    <Box px={{base:8,md:16,lg:30}}>
       <VStack>
         <Text fontSize={"xl"} fontWeight={"bold"} justifyContent={"center"}>
           Stack
         </Text>
       </VStack>
-      <HStack justifyContent={"center"} gap={20}>
+      <HStack justifyContent={"center"} gap={10} flexWrap={'wrap'} mb={4}>
         <Icon
           as={IoLogoJavascript}
-          color={"white"}
+          color={"#F9F8E6"}
           bgColor="black"
           h={8}
           w={8}
