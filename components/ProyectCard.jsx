@@ -21,7 +21,7 @@ export const ProyectCard = ({
         display={"flex"}
         justifyContent={"center"}
         rounded={"lg"}
-        _hover={{ shadow: "xl" }}
+        _hover={{ shadow: "dark-lg" }}
       >
         <Heading fontSize="xl" justifyContent={"center"}>
           {name}

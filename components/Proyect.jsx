@@ -45,7 +45,7 @@ export const Proyect = () => {
   return (
     <Box>
       <VStack>
-        <Text fontWeight={"bold"} fontSize={"3xl"}>
+        <Text fontWeight={"bold"} fontSize={"3xl"} mt={10}>
           Proyectos
         </Text>
       </VStack>

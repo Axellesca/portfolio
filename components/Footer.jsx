@@ -19,7 +19,7 @@ export const Footer = () => {
   return (
     <Box>
       <Box display={"flex"} flexDirection={"row"} justifyContent={"center"}>
-        <Text fontWeight={"bold"} fontSize={"xl"}>
+        <Text fontWeight={"bold"} fontSize={"2xl"}>
           {/* XXXXX XXXXXXXX */}
           Contacta Conmigo
         </Text>

@@ -15,10 +15,10 @@ export const Navbar = () => {
     >
       {/* Fijarse alignitems para corregir el error de que queden mas arriba que otro*/}
       <Box>
-        <Text fontSize={"3xl"} fontWeight={"bold"}>
+        <Text fontSize={"3xl"} fontWeight={"bold"} >
           {/* Axel Lescano */}
           DDDD DDDDDDD
-          <Text fontSize={"13px"} as={"i"} fontWeight={"normal"}>
+          <Text fontSize={"13px"} as={"i"} fontWeight={"normal"} >
             {" "}
             Frontend Developer
           </Text>

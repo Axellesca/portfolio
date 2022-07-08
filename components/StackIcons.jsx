@@ -9,7 +9,7 @@ export const StackIcons = () => {
   return (
     <Box px={{base:8,md:16,lg:30}}>
       <VStack>
-        <Text fontSize={"xl"} fontWeight={"bold"} justifyContent={"center"}>
+        <Text fontSize={"2xl"} fontWeight={"bold"} justifyContent={"center"} mt={10}>
           Stack
         </Text>
       </VStack>
