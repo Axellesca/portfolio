@@ -11,15 +11,18 @@ import {
   Button,
   Lorem,
 } from "@chakra-ui/react";
+import { Icon } from "@chakra-ui/icons";
+import { MdContactPage, MdOutlineContactPage } from "react-icons/md";
 
 export const ButtonModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <div>
-      <Button mt={4} onClick={onOpen}>
-        Open Modal
-      </Button>
+      {''}
+      <Icon onClick={onOpen} w={50} h={50} cursor={'pointer'}>
+        <MdContactPage/>
+      </Icon>
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>

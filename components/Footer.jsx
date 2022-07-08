@@ -42,7 +42,7 @@ export const Footer = () => {
         </Box>
 
         <Box /* w={"50px"} h={"50px"} */>
-          <Icon w={50} h={50}>
+          <Icon w={50} h={50} cursor={'pointer'}>
             <AiFillMail />
           </Icon>
         </Box>
