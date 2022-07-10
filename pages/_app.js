@@ -1,17 +1,7 @@
-import { ChakraProvider, extendTheme } from '@chakra-ui/react';
-import { mode, StyleFunctionProps } from '@chakra-ui/theme-tools';
-import '../styles/globals.css';
+import { ChakraProvider } from '@chakra-ui/react';
+import { theme } from '../helpers/theme';
 
-const theme = extendTheme({
-  styles: {
-    global: {
-      body: {
-        bg: '#E8E6D3',
-        fontFamily: 'Sen',
-      },
-    },
-  },
-});
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
   return (

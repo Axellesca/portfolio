@@ -1,16 +1,18 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Experiencia } from "../components/Experiencia";
-import { Footer } from "../components/Footer";
-import { Info } from "../components/Info";
-import { Navbar } from "../components/Navbar";
-import { Proyect } from "../components/Proyect";
-import { StackIcons } from "../components/StackIcons";
-import styles from "../styles/Home.module.css";
+import Head from 'next/head';
+import Image from 'next/image';
+import { Experiencia } from '../components/Experiencia';
+import { Footer } from '../components/Footer';
+import { Info } from '../components/Info';
+import { Layout } from '../components/Layout/Layout';
+import { Navbar } from '../components/Navbar';
+import { Navbar2 } from '../components/Navbar2';
+import { Proyect } from '../components/Proyect';
+import { StackIcons } from '../components/StackIcons';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
-    <div>
+    <Layout>
       <Head>
         <title>Portfolio Next</title>
         <meta
@@ -25,17 +27,18 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet"/> */}
       </Head>
       {/* NavBar */}
-      <Navbar />
+      {/* <Navbar /> */}
+      <Navbar2 />
       {/* Info/Exp */}
       <Info />
-      {/* Stack */}
-      <StackIcons />
       {/* Experiencia */}
       <Experiencia />
+      {/* Stack */}
+      <StackIcons />
       {/* Proyects */}
       <Proyect />
       {/* Footer */}
       <Footer />
-    </div>
+    </Layout>
   );
 }
