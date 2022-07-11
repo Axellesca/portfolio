@@ -13,7 +13,7 @@ export const Info = () => {
         aprender cosas nuevas.
       </Text>
       <Text as={'em'} color={'gray'}>
-        De Santa Fe capital, Argentina
+        De Santa Fe capital, Argentina.
       </Text>
     </Box>
   );

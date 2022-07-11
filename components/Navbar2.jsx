@@ -1,8 +1,18 @@
-import { Stack, Box, Button, Text } from '@chakra-ui/react';
-import { Icon } from '@chakra-ui/icons';
+import {
+  Stack,
+  Box,
+  Button,
+  useColorMode,
+  useDisclosure,
+} from '@chakra-ui/react';
+import { Icon, SunIcon, MoonIcon } from '@chakra-ui/icons';
 import { MdDarkMode } from 'react-icons/md';
+import { FiSun } from 'react-icons/fi';
 
 export const Navbar2 = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
+  const { isOpen, onToggle } = useDisclosure();
+
   return (
     <Stack
       mt={'30px'}
@@ -15,15 +25,15 @@ export const Navbar2 = () => {
     >
       {/* Fijarse alignitems para corregir el error de que queden mas arriba que otro*/}
       <Stack alignItems={'center'}>
-        <Text fontSize={'3xl'} fontWeight={'bold'}>
+        <Box fontSize={'3xl'} fontWeight={'bold'}>
           Axel Lescano
           <Stack alignItems={'center'}>
-            <Text fontSize={'13px'} as={'i'} fontWeight={'normal'}>
+            <Box fontSize={'13px'} as={'i'} fontWeight={'normal'}>
               {' '}
               Frontend Developer
-            </Text>
+            </Box>
           </Stack>
-        </Text>
+        </Box>
       </Stack>
       {/* <Box flexGrow={'1'}></Box> */}
       <Stack
@@ -37,8 +47,12 @@ export const Navbar2 = () => {
       >
         <Stack>
           <Button
-            colorScheme={'yellow'}
-            /* colorScheme={"#E8E6D3"} */ color="black"
+            {...(colorMode === 'light'
+              ? { colorScheme: 'yellow' }
+              : { colorScheme: 'blue' })}
+            {...(colorMode === 'light'
+              ? { color: 'black' }
+              : { color: 'white' })}
             variant={'ghost'}
           >
             Info/Exp
@@ -46,8 +60,12 @@ export const Navbar2 = () => {
         </Stack>
         <Stack>
           <Button
-            colorScheme={'yellow'}
-            /* colorScheme={"#E8E6D3"} */ color="black"
+            {...(colorMode === 'light'
+              ? { colorScheme: 'yellow' }
+              : { colorScheme: 'blue' })}
+            {...(colorMode === 'light'
+              ? { color: 'black' }
+              : { color: 'white' })}
             variant={'ghost'}
           >
             Proyectos
@@ -55,26 +73,42 @@ export const Navbar2 = () => {
         </Stack>
         <Stack>
           <Button
-            colorScheme={'yellow'}
-            /* colorScheme={"#E8E6D3"} */ color="black"
+            {...(colorMode === 'light'
+              ? { colorScheme: 'yellow' }
+              : { colorScheme: 'blue' })}
+            {...(colorMode === 'light'
+              ? { color: 'black' }
+              : { color: 'white' })}
             variant={'ghost'}
           >
             Contacto
           </Button>
         </Stack>
         {/* <Box>
-          <Button
-            leftIcon={<MdDarkMode />}
-            colorScheme={'yellow'}
-            color="black"
-            variant={'ghost'}
-          >
-            Darkmode
-          </Button>
-        </Box> */}
+              <Button
+                leftIcon={<MdDarkMode />}
+                colorScheme={'yellow'}
+                color="black"
+                variant={'ghost'}
+              >
+                Darkmode
+              </Button>
+            </Box> */}
 
-        <Button colorScheme={'yellow'} variant={'ghost'}>
-          <Icon as={MdDarkMode} w={8} h={8} color={'black'} />
+        <Button
+          {...(colorMode === 'light'
+            ? { colorScheme: 'yellow' }
+            : { colorScheme: 'blue' })}
+          variant={'ghost'}
+          onClick={toggleColorMode}
+        >
+          {colorMode === 'light' ? (
+            // <Icon as={MdDarkMode} w={8} h={8} color={'blackAlpha.900'} />
+            <MoonIcon w={8} h={8} color={'blackAlpha.900'} />
+          ) : (
+            // <Icon as={FiSun} w={8} h={8} color={'yellow'} />
+            <SunIcon w={8} h={8} color={'yellow'} />
+          )}
         </Button>
       </Stack>
     </Stack>

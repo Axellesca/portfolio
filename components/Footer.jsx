@@ -1,35 +1,34 @@
-import { Box, Stack, Text, Button } from "@chakra-ui/react";
-import { Icon } from "@chakra-ui/icons";
-import { ButtonModal } from "./ButtonModal";
-import { MdContactPage, MdOutlineContactPage } from "react-icons/md";
+import { Box, Stack, Text, Button } from '@chakra-ui/react';
+import { Icon } from '@chakra-ui/icons';
+import { ButtonModal } from './ButtonModal';
+import { MdContactPage, MdOutlineContactPage } from 'react-icons/md';
 import {
   AiOutlineGithub,
   AiFillLinkedin,
   AiOutlineLinkedin,
   AiOutlineMail,
   AiFillMail,
-} from "react-icons/ai";
-import { TbBrandGithub } from "react-icons/tb";
+} from 'react-icons/ai';
+import { TbBrandGithub } from 'react-icons/tb';
 
 export const Footer = () => {
   const modalClick = () => {
-    console.log("click");
+    console.log('click');
   };
 
   return (
     <Box>
-      <Box display={"flex"} flexDirection={"row"} justifyContent={"center"}>
-        <Text fontWeight={"bold"} fontSize={"2xl"}>
-          {/* XXXXX XXXXXXXX */}
+      <Box display={'flex'} flexDirection={'row'} justifyContent={'center'}>
+        <Text fontWeight={'bold'} fontSize={'2xl'}>
           Contacta Conmigo
         </Text>
       </Box>
       <Stack
-        display={"flex"}
-        flexDirection={"row"}
-        flexWrap={"wrap"}
-        justifyContent={"space-evenly"}
-        alignItems={"flex-end"}
+        display={'flex'}
+        flexDirection={'row'}
+        flexWrap={'wrap'}
+        justifyContent={'space-evenly'}
+        alignItems={'flex-end'}
       >
         {/* <br></br> */}
         {/*Hacer Button para descargar CV*/}
