@@ -12,9 +12,9 @@ import {
 import { TbBrandGithub } from 'react-icons/tb';
 
 export const Footer = () => {
-  const modalClick = () => {
-    console.log('click');
-  };
+  // const modalClick = () => {
+  //   console.log('click');
+  // };
 
   return (
     <Box>
@@ -32,11 +32,8 @@ export const Footer = () => {
       >
         {/* <br></br> */}
         {/*Hacer Button para descargar CV*/}
-        <Box onClick={modalClick}>
-          {/* <Icon w={50} h={50}>
-                        <MdContactPage/>
-                    </Icon> */}
-          {/* <Icon as={MdContactPage}/> */}
+        <Box >
+          
           <ButtonModal />
         </Box>
 
