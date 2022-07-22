@@ -8,7 +8,6 @@ import { Navbar } from '../components/Navbar';
 import { Navbar2 } from '../components/Navbar2';
 import { Proyect } from '../components/Proyect';
 import { StackIcons } from '../components/StackIcons';
-import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (

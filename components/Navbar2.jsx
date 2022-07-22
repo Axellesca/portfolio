@@ -1,17 +1,10 @@
-import {
-  Stack,
-  Box,
-  Button,
-  useColorMode,
-  useDisclosure,
-} from '@chakra-ui/react';
+import { Stack, Box, Button, useColorMode } from '@chakra-ui/react';
 import { Icon, SunIcon, MoonIcon } from '@chakra-ui/icons';
 import { MdDarkMode } from 'react-icons/md';
 import { FiSun } from 'react-icons/fi';
 
 export const Navbar2 = () => {
   const { colorMode, toggleColorMode } = useColorMode();
-  const { isOpen, onToggle } = useDisclosure();
 
   return (
     <Stack

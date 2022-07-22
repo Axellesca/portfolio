@@ -11,6 +11,8 @@ export const theme = extendTheme({
       body: {
         fontFamily: 'Sen',
         bg: mode('light', '#22253F')(props),
+        transitionProperty: 'background-color',
+        transitionDuration: '0.5s',
       },
       'html,body, #__next': {
         height: '100%',
