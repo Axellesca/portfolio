@@ -1,4 +1,4 @@
-import { Box, Stack, VStack, Text, Heading,Button } from "@chakra-ui/react";
+import { Box, Stack, VStack, Text, Heading, Button } from "@chakra-ui/react";
 import Image from "next/image";
 
 export const ProyectCard = ({
@@ -23,9 +23,9 @@ export const ProyectCard = ({
         justifyContent={"center"}
         rounded={"lg"}
         _hover={{ shadow: "xl" }}
-        flexWrap={'wrap'}
+        flexWrap={"wrap"}
       >
-        <div fontSize={12} fontWeight={"light"} color={'gray.600'}>
+        <div fontSize={12} fontWeight={"light"} color={"gray.600"}>
           {stack}
         </div>
         <Heading fontSize="xl" justifyContent={"center"}>
@@ -33,15 +33,11 @@ export const ProyectCard = ({
         </Heading>
         <Image src={imgPreview} width="1100px" height="400px" />
         <div mt={4}>{infoProyect}</div>
-        <a href={linkDeploy} target="_blank">
-          <Button colorScheme={'blue'}>
-            Deploy
-          </Button>
+        <a href={linkDeploy} target="_blank" rel="noreferrer">
+          <Button colorScheme={"blue"}>Deploy</Button>
         </a>
-        <a href={linkGithub} target="_blank">
-          <Button colorScheme={'red'}>
-            Github
-          </Button>
+        <a href={linkGithub} target="_blank" rel="noreferrer">
+          <Button colorScheme={"red"}>Github</Button>
         </a>
       </Box>
     </a>
