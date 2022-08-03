@@ -1,14 +1,7 @@
-import {
-  Box,
-  Stack,
-  VStack,
-  HStack,
-  Text,
-  Heading,
-  Button,
-} from "@chakra-ui/react";
+import { Box, VStack, HStack, Heading, Button, Link } from "@chakra-ui/react";
 import Image from "next/image";
-import Link from "next/link";
+import { AiOutlineGithub } from "react-icons/ai";
+import { BiLinkExternal } from "react-icons/bi";
 
 export const ProyectCard = ({
   name,
@@ -19,14 +12,15 @@ export const ProyectCard = ({
   imgPreview,
 }) => {
   return (
-    <Link href={linkDeploy} target="_blank" rel="noreferrer" passHref>
+    <Box>
       {/* Agruparlos en Stack o VStack, HStack */}
+
       <VStack
         p={5}
         shadow="md"
         borderWidth="1px"
         bgColor={"#F9F8E6"}
-        cursor={"pointer"}
+        // cursor={"pointer"}
         w={80}
         h={80}
         display={"flex"}
@@ -44,14 +38,18 @@ export const ProyectCard = ({
         <Image src={imgPreview} width="1100px" height="400px" />
         <div mt={4}>{infoProyect}</div>
         <HStack>
-          <a href={linkDeploy} target="_blank" rel=" noreferrer">
-            <Button colorScheme={"blue"}>Deploy</Button>
-          </a>
-          <a href={linkGithub} target="_blank" rel="noopener noreferrer">
-            <Button colorScheme={"red"}>Github</Button>
-          </a>
+          <Link href={linkDeploy} target="_blank" rel="noreferrer" isExternal>
+            <Button rightIcon={<BiLinkExternal />} colorScheme={"blue"}>
+              Deploy
+            </Button>
+          </Link>
+          <Link href={linkGithub} target="_blank" rel="noreferrer" isExternal>
+            <Button rightIcon={<AiOutlineGithub />} colorScheme={"red"}>
+              Github
+            </Button>
+          </Link>
         </HStack>
       </VStack>
-    </Link>
+    </Box>
   );
 };
