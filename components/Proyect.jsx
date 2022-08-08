@@ -1,5 +1,6 @@
 import { Box, Text, HStack, VStack, Grid, GridItem } from "@chakra-ui/react";
 import { ProyectCard } from "./ProyectCard";
+import ProyectCardNew from "./ProyectCardNew";
 
 // Colocar los Proyectos como un Array de objetos, colocar nombre,id=index o crear un id con uuid o alguna libreria, linkDeploy y linkGithub, stack=lenguajes y frameworks utilizados, infoProyecto, imgPrevisualizacion.
 const proyectos = [
@@ -57,15 +58,16 @@ export const Proyect = () => {
         wrap={"wrap"}
       >
         {proyectos.map((proy) => (
-          <ProyectCard
-            key={proy.id}
-            name={proy.name}
-            linkDeploy={proy.linkDeploy}
-            linkGithub={proy.linkGithub}
-            stack={proy.stack}
-            infoProyect={proy.infoProyect}
-            imgPreview={proy.imgPreview}
-          />
+          // <ProyectCard
+          //   key={proy.id}
+          //   name={proy.name}
+          //   linkDeploy={proy.linkDeploy}
+          //   linkGithub={proy.linkGithub}
+          //   stack={proy.stack}
+          //   infoProyect={proy.infoProyect}
+          //   imgPreview={proy.imgPreview}
+          // />
+          <ProyectCardNew key={proy.id} />
         ))}
       </HStack>
       {/* </Grid> */}

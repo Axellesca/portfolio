@@ -1,8 +1,8 @@
-import { Container } from '@chakra-ui/react';
+import { Container } from "@chakra-ui/react";
 
 export const Layout = ({ children }) => {
   return (
-    <Container maxWidth={'container.ds'} alignContent="center">
+    <Container maxWidth={"container.ds"} alignContent="center">
       {children}
     </Container>
   );
