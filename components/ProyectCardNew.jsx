@@ -11,12 +11,12 @@ const ProyectCardNew = ({
 }) => {
   return (
     <Flex
-      bg="#edf3f8"
-      _dark={{
-        bg: "#3e3e3e",
-      }}
-      p={50}
-      w="full"
+      // bg="#edf3f8"
+      // _dark={{
+      //   bg: "#3e3e3e",
+      // }}
+      p={5}
+      w="lg"
       alignItems="center"
       justifyContent="center"
     >
@@ -31,6 +31,7 @@ const ProyectCardNew = ({
         rounded="lg"
       >
         <Box px={4} py={2}>
+          <chakra.span color={"gray"}>{stack}</chakra.span>
           <chakra.h1
             color="gray.800"
             _dark={{
@@ -40,7 +41,7 @@ const ProyectCardNew = ({
             fontSize="3xl"
             textTransform="uppercase"
           >
-            NIKE AIR
+            {name}
           </chakra.h1>
           <chakra.p
             mt={1}
@@ -50,8 +51,7 @@ const ProyectCardNew = ({
               color: "gray.400",
             }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quos
-            quidem sequi illum facere recusandae voluptatibus
+            {infoProyect}
           </chakra.p>
         </Box>
 

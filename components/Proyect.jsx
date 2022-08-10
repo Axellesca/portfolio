@@ -67,7 +67,15 @@ export const Proyect = () => {
           //   infoProyect={proy.infoProyect}
           //   imgPreview={proy.imgPreview}
           // />
-          <ProyectCardNew key={proy.id} />
+          <ProyectCardNew
+            key={proy.id}
+            name={proy.name}
+            linkDeploy={proy.linkDeploy}
+            linkGithub={proy.linkGithub}
+            stack={proy.stack}
+            infoProyect={proy.infoProyect}
+            imgPreview={proy.imgPreview}
+          />
         ))}
       </HStack>
       {/* </Grid> */}
