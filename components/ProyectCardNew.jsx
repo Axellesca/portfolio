@@ -31,7 +31,9 @@ const ProyectCardNew = ({
         rounded="lg"
       >
         <Box px={4} py={2}>
-          <chakra.span color={"gray"}>{stack}</chakra.span>
+          <chakra.span color={"gray.800"} _dark={{ color: "gray.400" }}>
+            {stack}
+          </chakra.span>
           <chakra.h1
             color="gray.800"
             _dark={{
@@ -69,10 +71,18 @@ const ProyectCardNew = ({
           justifyContent="space-between"
           px={4}
           py={2}
-          bg="gray.900"
+          bg="white"
+          _dark={{
+            bg: "gray.900",
+          }}
           roundedBottom="lg"
         >
-          <chakra.h1 color="white" fontWeight="bold" fontSize="lg">
+          <chakra.h1
+            color="black"
+            _dark={{ color: "white" }}
+            fontWeight="bold"
+            fontSize="lg"
+          >
             $129
           </chakra.h1>
           <chakra.button
