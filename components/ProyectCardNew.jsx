@@ -1,5 +1,8 @@
 import React from "react";
-import { Flex, Box, chakra, Image } from "@chakra-ui/react";
+import { Flex, Box, chakra, Image, Link, Button } from "@chakra-ui/react";
+
+import { AiOutlineGithub } from "react-icons/ai";
+import { BiLinkExternal } from "react-icons/bi";
 
 const ProyectCardNew = ({
   name,
@@ -63,6 +66,7 @@ const ProyectCardNew = ({
           fit="cover"
           mt={2}
           src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80"
+          // src={imgPreview}
           alt="NIKE AIR"
         />
 
@@ -73,19 +77,19 @@ const ProyectCardNew = ({
           py={2}
           bg="white"
           _dark={{
-            bg: "gray.900",
+            bg: "gray.800",
           }}
           roundedBottom="lg"
         >
-          <chakra.h1
+          {/* <chakra.h1
             color="black"
             _dark={{ color: "white" }}
             fontWeight="bold"
             fontSize="lg"
           >
             $129
-          </chakra.h1>
-          <chakra.button
+          </chakra.h1> */}
+          {/* <chakra.button
             px={2}
             py={1}
             bg="white"
@@ -102,7 +106,27 @@ const ProyectCardNew = ({
             }}
           >
             Add to cart
-          </chakra.button>
+          </chakra.button> */}
+          <Link href={linkDeploy} target="_blank" rel="noreferrer" isExternal>
+            <Button
+              rightIcon={<BiLinkExternal />}
+              colorScheme={"yellow"}
+              rounded="2xl"
+              variant={"outline"}
+            >
+              Deploy
+            </Button>
+          </Link>
+          <Link href={linkGithub} target="_blank" rel="noreferrer" isExternal>
+            <Button
+              rightIcon={<AiOutlineGithub />}
+              colorScheme={"purple"}
+              rounded="2xl"
+              variant={"outline"}
+            >
+              Github
+            </Button>
+          </Link>
         </Flex>
       </Box>
     </Flex>

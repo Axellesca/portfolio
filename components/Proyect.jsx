@@ -8,7 +8,7 @@ const proyectos = [
     id: 1,
     name: "Portfolio",
     linkDeploy: "https://github.com/Axellesca",
-    linkGithub: "https://wwww.github.com/Axellesca/portfolio",
+    linkGithub: "https://github.com/Axellesca/portfolio",
     stack: "NextJS - Chakra UI",
     infoProyect: "Portfolio para muestra personal de proyectos",
     imgPreview: "/favicon.ico",
@@ -28,7 +28,7 @@ const proyectos = [
     linkDeploy: "https://imagenes-ts-axellesca.vercel.app/",
     linkGithub: "https://github.com/Axellesca/imagenes-ts",
     stack: "asdasd",
-    infoProyect: "asdasdasd",
+    infoProyect: "asdasdasdddddddddddddddddddddddddddddddddddddddddddddd",
     imgPreview: "/vercel.svg",
   },
   {
@@ -37,7 +37,8 @@ const proyectos = [
     linkDeploy: "https://github.com/Axellesca/imagenes-ts",
     linkGithub: "https://github.com/Axellesca/imagenes-ts",
     stack: "asdasd",
-    infoProyect: "asdasdasddd",
+    infoProyect:
+      "asdasdasdddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
     imgPreview: "/vercel.svg",
   },
 ];
